@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="testModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="testModelStoreContainer">
+          <EntitySet Name="crm_aspect_monitor_aod" EntityType="testModel.Store.crm_aspect_monitor_aod" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+        </EntityContainer>
+        <EntityType Name="crm_aspect_monitor_aod">
+          <Key>
+            <PropertyRef Name="serviceid" />
+          </Key>
+          <Property Name="serviceid" Type="varchar" Nullable="false" MaxLength="60" />
+          <Property Name="service" Type="varchar" MaxLength="60" />
+          <Property Name="status" Type="varchar" MaxLength="60" />
+          <Property Name="agentsinaccept" Type="varchar" MaxLength="60" />
+          <Property Name="agentsinactive" Type="varchar" MaxLength="60" />
+          <Property Name="agentsinconnect" Type="varchar" MaxLength="60" />
+          <Property Name="agentsinhold" Type="varchar" MaxLength="60" />
+          <Property Name="agentsinidle" Type="varchar" MaxLength="60" />
+          <Property Name="agentsininternal" Type="varchar" MaxLength="60" />
+          <Property Name="agentsinmanual" Type="varchar" MaxLength="60" />
+          <Property Name="agentsinmultil" Type="varchar" MaxLength="60" />
+          <Property Name="agentsinnotready" Type="varchar" MaxLength="60" />
+          <Property Name="agentsinother" Type="varchar" MaxLength="60" />
+          <Property Name="agentsinpark" Type="varchar" MaxLength="60" />
+          <Property Name="agentsinpreview" Type="varchar" MaxLength="60" />
+          <Property Name="agentsinwrap" Type="varchar" MaxLength="60" />
+          <Property Name="agentsloggedin" Type="varchar" MaxLength="60" />
+          <Property Name="application" Type="varchar" MaxLength="60" />
+          <Property Name="applicationid" Type="varchar" MaxLength="60" />
+          <Property Name="avgagentactivetime" Type="varchar" MaxLength="60" />
+          <Property Name="avgagentidletime" Type="varchar" MaxLength="60" />
+          <Property Name="avgagentwraptime" Type="varchar" MaxLength="60" />
+          <Property Name="callsanswered" Type="varchar" MaxLength="60" />
+          <Property Name="callsinprogress" Type="varchar" MaxLength="60" />
+          <Property Name="callsinqueue" Type="varchar" MaxLength="60" />
+          <Property Name="callsservicedwithinserviceleveldaily" Type="varchar" MaxLength="60" />
+          <Property Name="callstransferredtoagent" Type="varchar" MaxLength="60" />
+          <Property Name="callstransferredtoexternal" Type="varchar" MaxLength="60" />
+          <Property Name="callstransferredtoservice" Type="varchar" MaxLength="60" />
+          <Property Name="duractivetime" Type="varchar" MaxLength="60" />
+          <Property Name="durwraptime" Type="varchar" MaxLength="60" />
+          <Property Name="maxcallsinqueue" Type="varchar" MaxLength="60" />
+          <Property Name="occupancy" Type="varchar" MaxLength="60" />
+          <Property Name="servicetype" Type="varchar" MaxLength="60" />
+          <Property Name="servicetypeid" Type="varchar" MaxLength="60" />
+          <Property Name="starttimemilitary" Type="varchar" MaxLength="60" />
+          <Property Name="statusid" Type="varchar" MaxLength="60" />
+          <Property Name="stoptimemilitary" Type="varchar" MaxLength="60" />
+          <Property Name="abandonbydialer24hour" Type="varchar" MaxLength="60" />
+          <Property Name="abandonedbycustomer" Type="varchar" MaxLength="60" />
+          <Property Name="abandonedbyswitch" Type="varchar" MaxLength="60" />
+          <Property Name="agentansweringmachines" Type="varchar" MaxLength="60" />
+          <Property Name="agentansweringmachines24hour" Type="varchar" MaxLength="60" />
+          <Property Name="abandonedpercent" Type="varchar" MaxLength="60" />
+          <Property Name="answeringmachines24hour" Type="varchar" MaxLength="60" />
+          <Property Name="answeringmachinescurrent" Type="varchar" MaxLength="60" />
+          <Property Name="busyhourcallrate" Type="varchar" MaxLength="60" />
+          <Property Name="callingpartyinfoviolation" Type="varchar" MaxLength="60" />
+          <Property Name="callsansweredservicelevelinterval" Type="varchar" MaxLength="60" />
+          <Property Name="callsdialed" Type="varchar" MaxLength="60" />
+          <Property Name="callstarttogreetingaverage" Type="varchar" MaxLength="60" />
+          <Property Name="callstarttogreetinghigh" Type="varchar" MaxLength="60" />
+          <Property Name="callstarttogreetinglow" Type="varchar" MaxLength="60" />
+          <Property Name="currentdetectiontype" Type="varchar" MaxLength="60" />
+          <Property Name="currentdialmode" Type="varchar" MaxLength="60" />
+          <Property Name="currentdialratio" Type="varchar" MaxLength="60" />
+          <Property Name="currentdialsettingsautorevert" Type="varchar" MaxLength="60" />
+          <Property Name="currentquota" Type="varchar" MaxLength="60" />
+          <Property Name="detecttotransferaverage" Type="varchar" MaxLength="60" />
+          <Property Name="detecttotransferhigh" Type="varchar" MaxLength="60" />
+          <Property Name="detecttotransferlow" Type="varchar" MaxLength="60" />
+          <Property Name="falsenegativecount" Type="varchar" MaxLength="60" />
+          <Property Name="falsepositivecount" Type="varchar" MaxLength="60" />
+          <Property Name="greetingtoconnectaverage" Type="varchar" MaxLength="60" />
+          <Property Name="greetingtoconnecthigh" Type="varchar" MaxLength="60" />
+          <Property Name="greetingtoconnectlow" Type="varchar" MaxLength="60" />
+          <Property Name="greetingtodetectaverage" Type="varchar" MaxLength="60" />
+          <Property Name="greetingtodetecthigh" Type="varchar" MaxLength="60" />
+          <Property Name="greetingtodetectlow" Type="varchar" MaxLength="60" />
+          <Property Name="hangup" Type="varchar" MaxLength="60" />
+          <Property Name="hitrate" Type="varchar" MaxLength="60" />
+          <Property Name="lastfailabandonpercent" Type="varchar" MaxLength="60" />
+          <Property Name="lasttimetofail" Type="varchar" MaxLength="60" />
+          <Property Name="lasttimetorecover" Type="varchar" MaxLength="60" />
+          <Property Name="maxquota" Type="varchar" MaxLength="60" />
+          <Property Name="minutesleftonschedule" Type="varchar" MaxLength="60" />
+          <Property Name="numberalertsofcom" Type="varchar" MaxLength="60" />
+          <Property Name="numberalertsofcom24hours" Type="varchar" MaxLength="60" />
+          <Property Name="numberhits24hour" Type="varchar" MaxLength="60" />
+          <Property Name="numberhits24hourforfalsepositive" Type="varchar" MaxLength="60" />
+          <Property Name="numberhitscurrent" Type="varchar" MaxLength="60" />
+          <Property Name="numberhitsforfalsepositivecurrent" Type="varchar" MaxLength="60" />
+          <Property Name="numbermisses24hour" Type="varchar" MaxLength="60" />
+          <Property Name="numbermissescurrent" Type="varchar" MaxLength="60" />
+          <Property Name="numberofcomabandons24hour" Type="varchar" MaxLength="60" />
+          <Property Name="numberofcomabandonscurrent" Type="varchar" MaxLength="60" />
+          <Property Name="numberofrecoveries" Type="varchar" MaxLength="60" />
+          <Property Name="numberofsales" Type="varchar" MaxLength="60" />
+          <Property Name="peakhourcallrate" Type="varchar" MaxLength="60" />
+          <Property Name="playmessage" Type="varchar" MaxLength="60" />
+          <Property Name="playmessagefailure" Type="varchar" MaxLength="60" />
+          <Property Name="playmessagetimesuccess" Type="varchar" MaxLength="60" />
+          <Property Name="playmessagetimeviolation" Type="varchar" MaxLength="60" />
+          <Property Name="playscript" Type="varchar" MaxLength="60" />
+          <Property Name="recoverytimebegin" Type="varchar" MaxLength="60" />
+          <Property Name="recoverytimeend" Type="varchar" MaxLength="60" />
+          <Property Name="ringnoanswerviolation" Type="varchar" MaxLength="60" />
+          <Property Name="scheduledcallbacks" Type="varchar" MaxLength="60" />
+          <Property Name="senddigits" Type="varchar" MaxLength="60" />
+          <Property Name="sendfax" Type="varchar" MaxLength="60" />
+          <Property Name="timezoneidentifier" Type="varchar" MaxLength="60" />
+          <Property Name="transfertimesuccess" Type="varchar" MaxLength="60" />
+          <Property Name="transfertimeviolation" Type="varchar" MaxLength="60" />
+          <Property Name="transfertoconnectaverage" Type="varchar" MaxLength="60" />
+          <Property Name="transfertoconnecthigh" Type="varchar" MaxLength="60" />
+          <Property Name="transfertoconnectlow" Type="varchar" MaxLength="60" />
+          <Property Name="utcstarttime" Type="varchar" MaxLength="60" />
+          <Property Name="utcstoptime" Type="varchar" MaxLength="60" />
+          <Property Name="getaoddata" Type="varchar" MaxLength="60" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="testModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="testEntities">
+          <EntitySet Name="crm_aspect_monitor_aod" EntityType="testModel.crm_aspect_monitor_aod" />
+        </EntityContainer>
+        <EntityType Name="crm_aspect_monitor_aod">
+          <Key>
+            <PropertyRef Name="serviceid" />
+          </Key>
+          <Property Name="serviceid" Type="String" Nullable="false" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="service" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="status" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="agentsinaccept" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="agentsinactive" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="agentsinconnect" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="agentsinhold" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="agentsinidle" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="agentsininternal" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="agentsinmanual" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="agentsinmultil" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="agentsinnotready" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="agentsinother" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="agentsinpark" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="agentsinpreview" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="agentsinwrap" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="agentsloggedin" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="application" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="applicationid" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="avgagentactivetime" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="avgagentidletime" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="avgagentwraptime" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="callsanswered" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="callsinprogress" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="callsinqueue" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="callsservicedwithinserviceleveldaily" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="callstransferredtoagent" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="callstransferredtoexternal" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="callstransferredtoservice" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="duractivetime" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="durwraptime" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="maxcallsinqueue" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="occupancy" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="servicetype" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="servicetypeid" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="starttimemilitary" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="statusid" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="stoptimemilitary" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="abandonbydialer24hour" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="abandonedbycustomer" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="abandonedbyswitch" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="agentansweringmachines" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="agentansweringmachines24hour" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="abandonedpercent" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="answeringmachines24hour" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="answeringmachinescurrent" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="busyhourcallrate" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="callingpartyinfoviolation" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="callsansweredservicelevelinterval" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="callsdialed" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="callstarttogreetingaverage" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="callstarttogreetinghigh" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="callstarttogreetinglow" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="currentdetectiontype" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="currentdialmode" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="currentdialratio" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="currentdialsettingsautorevert" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="currentquota" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="detecttotransferaverage" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="detecttotransferhigh" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="detecttotransferlow" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="falsenegativecount" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="falsepositivecount" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="greetingtoconnectaverage" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="greetingtoconnecthigh" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="greetingtoconnectlow" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="greetingtodetectaverage" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="greetingtodetecthigh" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="greetingtodetectlow" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="hangup" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="hitrate" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="lastfailabandonpercent" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="lasttimetofail" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="lasttimetorecover" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="maxquota" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="minutesleftonschedule" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="numberalertsofcom" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="numberalertsofcom24hours" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="numberhits24hour" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="numberhits24hourforfalsepositive" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="numberhitscurrent" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="numberhitsforfalsepositivecurrent" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="numbermisses24hour" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="numbermissescurrent" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="numberofcomabandons24hour" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="numberofcomabandonscurrent" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="numberofrecoveries" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="numberofsales" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="peakhourcallrate" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="playmessage" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="playmessagefailure" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="playmessagetimesuccess" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="playmessagetimeviolation" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="playscript" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="recoverytimebegin" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="recoverytimeend" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="ringnoanswerviolation" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="scheduledcallbacks" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="senddigits" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="sendfax" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="timezoneidentifier" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="transfertimesuccess" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="transfertimeviolation" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="transfertoconnectaverage" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="transfertoconnecthigh" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="transfertoconnectlow" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="utcstarttime" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="utcstoptime" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="getaoddata" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="testModelStoreContainer" CdmEntityContainer="testEntities">
+          <EntitySetMapping Name="crm_aspect_monitor_aod">
+            <EntityTypeMapping TypeName="testModel.crm_aspect_monitor_aod">
+              <MappingFragment StoreEntitySet="crm_aspect_monitor_aod">
+                <ScalarProperty Name="serviceid" ColumnName="serviceid" />
+                <ScalarProperty Name="service" ColumnName="service" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="agentsinaccept" ColumnName="agentsinaccept" />
+                <ScalarProperty Name="agentsinactive" ColumnName="agentsinactive" />
+                <ScalarProperty Name="agentsinconnect" ColumnName="agentsinconnect" />
+                <ScalarProperty Name="agentsinhold" ColumnName="agentsinhold" />
+                <ScalarProperty Name="agentsinidle" ColumnName="agentsinidle" />
+                <ScalarProperty Name="agentsininternal" ColumnName="agentsininternal" />
+                <ScalarProperty Name="agentsinmanual" ColumnName="agentsinmanual" />
+                <ScalarProperty Name="agentsinmultil" ColumnName="agentsinmultil" />
+                <ScalarProperty Name="agentsinnotready" ColumnName="agentsinnotready" />
+                <ScalarProperty Name="agentsinother" ColumnName="agentsinother" />
+                <ScalarProperty Name="agentsinpark" ColumnName="agentsinpark" />
+                <ScalarProperty Name="agentsinpreview" ColumnName="agentsinpreview" />
+                <ScalarProperty Name="agentsinwrap" ColumnName="agentsinwrap" />
+                <ScalarProperty Name="agentsloggedin" ColumnName="agentsloggedin" />
+                <ScalarProperty Name="application" ColumnName="application" />
+                <ScalarProperty Name="applicationid" ColumnName="applicationid" />
+                <ScalarProperty Name="avgagentactivetime" ColumnName="avgagentactivetime" />
+                <ScalarProperty Name="avgagentidletime" ColumnName="avgagentidletime" />
+                <ScalarProperty Name="avgagentwraptime" ColumnName="avgagentwraptime" />
+                <ScalarProperty Name="callsanswered" ColumnName="callsanswered" />
+                <ScalarProperty Name="callsinprogress" ColumnName="callsinprogress" />
+                <ScalarProperty Name="callsinqueue" ColumnName="callsinqueue" />
+                <ScalarProperty Name="callsservicedwithinserviceleveldaily" ColumnName="callsservicedwithinserviceleveldaily" />
+                <ScalarProperty Name="callstransferredtoagent" ColumnName="callstransferredtoagent" />
+                <ScalarProperty Name="callstransferredtoexternal" ColumnName="callstransferredtoexternal" />
+                <ScalarProperty Name="callstransferredtoservice" ColumnName="callstransferredtoservice" />
+                <ScalarProperty Name="duractivetime" ColumnName="duractivetime" />
+                <ScalarProperty Name="durwraptime" ColumnName="durwraptime" />
+                <ScalarProperty Name="maxcallsinqueue" ColumnName="maxcallsinqueue" />
+                <ScalarProperty Name="occupancy" ColumnName="occupancy" />
+                <ScalarProperty Name="servicetype" ColumnName="servicetype" />
+                <ScalarProperty Name="servicetypeid" ColumnName="servicetypeid" />
+                <ScalarProperty Name="starttimemilitary" ColumnName="starttimemilitary" />
+                <ScalarProperty Name="statusid" ColumnName="statusid" />
+                <ScalarProperty Name="stoptimemilitary" ColumnName="stoptimemilitary" />
+                <ScalarProperty Name="abandonbydialer24hour" ColumnName="abandonbydialer24hour" />
+                <ScalarProperty Name="abandonedbycustomer" ColumnName="abandonedbycustomer" />
+                <ScalarProperty Name="abandonedbyswitch" ColumnName="abandonedbyswitch" />
+                <ScalarProperty Name="agentansweringmachines" ColumnName="agentansweringmachines" />
+                <ScalarProperty Name="agentansweringmachines24hour" ColumnName="agentansweringmachines24hour" />
+                <ScalarProperty Name="abandonedpercent" ColumnName="abandonedpercent" />
+                <ScalarProperty Name="answeringmachines24hour" ColumnName="answeringmachines24hour" />
+                <ScalarProperty Name="answeringmachinescurrent" ColumnName="answeringmachinescurrent" />
+                <ScalarProperty Name="busyhourcallrate" ColumnName="busyhourcallrate" />
+                <ScalarProperty Name="callingpartyinfoviolation" ColumnName="callingpartyinfoviolation" />
+                <ScalarProperty Name="callsansweredservicelevelinterval" ColumnName="callsansweredservicelevelinterval" />
+                <ScalarProperty Name="callsdialed" ColumnName="callsdialed" />
+                <ScalarProperty Name="callstarttogreetingaverage" ColumnName="callstarttogreetingaverage" />
+                <ScalarProperty Name="callstarttogreetinghigh" ColumnName="callstarttogreetinghigh" />
+                <ScalarProperty Name="callstarttogreetinglow" ColumnName="callstarttogreetinglow" />
+                <ScalarProperty Name="currentdetectiontype" ColumnName="currentdetectiontype" />
+                <ScalarProperty Name="currentdialmode" ColumnName="currentdialmode" />
+                <ScalarProperty Name="currentdialratio" ColumnName="currentdialratio" />
+                <ScalarProperty Name="currentdialsettingsautorevert" ColumnName="currentdialsettingsautorevert" />
+                <ScalarProperty Name="currentquota" ColumnName="currentquota" />
+                <ScalarProperty Name="detecttotransferaverage" ColumnName="detecttotransferaverage" />
+                <ScalarProperty Name="detecttotransferhigh" ColumnName="detecttotransferhigh" />
+                <ScalarProperty Name="detecttotransferlow" ColumnName="detecttotransferlow" />
+                <ScalarProperty Name="falsenegativecount" ColumnName="falsenegativecount" />
+                <ScalarProperty Name="falsepositivecount" ColumnName="falsepositivecount" />
+                <ScalarProperty Name="greetingtoconnectaverage" ColumnName="greetingtoconnectaverage" />
+                <ScalarProperty Name="greetingtoconnecthigh" ColumnName="greetingtoconnecthigh" />
+                <ScalarProperty Name="greetingtoconnectlow" ColumnName="greetingtoconnectlow" />
+                <ScalarProperty Name="greetingtodetectaverage" ColumnName="greetingtodetectaverage" />
+                <ScalarProperty Name="greetingtodetecthigh" ColumnName="greetingtodetecthigh" />
+                <ScalarProperty Name="greetingtodetectlow" ColumnName="greetingtodetectlow" />
+                <ScalarProperty Name="hangup" ColumnName="hangup" />
+                <ScalarProperty Name="hitrate" ColumnName="hitrate" />
+                <ScalarProperty Name="lastfailabandonpercent" ColumnName="lastfailabandonpercent" />
+                <ScalarProperty Name="lasttimetofail" ColumnName="lasttimetofail" />
+                <ScalarProperty Name="lasttimetorecover" ColumnName="lasttimetorecover" />
+                <ScalarProperty Name="maxquota" ColumnName="maxquota" />
+                <ScalarProperty Name="minutesleftonschedule" ColumnName="minutesleftonschedule" />
+                <ScalarProperty Name="numberalertsofcom" ColumnName="numberalertsofcom" />
+                <ScalarProperty Name="numberalertsofcom24hours" ColumnName="numberalertsofcom24hours" />
+                <ScalarProperty Name="numberhits24hour" ColumnName="numberhits24hour" />
+                <ScalarProperty Name="numberhits24hourforfalsepositive" ColumnName="numberhits24hourforfalsepositive" />
+                <ScalarProperty Name="numberhitscurrent" ColumnName="numberhitscurrent" />
+                <ScalarProperty Name="numberhitsforfalsepositivecurrent" ColumnName="numberhitsforfalsepositivecurrent" />
+                <ScalarProperty Name="numbermisses24hour" ColumnName="numbermisses24hour" />
+                <ScalarProperty Name="numbermissescurrent" ColumnName="numbermissescurrent" />
+                <ScalarProperty Name="numberofcomabandons24hour" ColumnName="numberofcomabandons24hour" />
+                <ScalarProperty Name="numberofcomabandonscurrent" ColumnName="numberofcomabandonscurrent" />
+                <ScalarProperty Name="numberofrecoveries" ColumnName="numberofrecoveries" />
+                <ScalarProperty Name="numberofsales" ColumnName="numberofsales" />
+                <ScalarProperty Name="peakhourcallrate" ColumnName="peakhourcallrate" />
+                <ScalarProperty Name="playmessage" ColumnName="playmessage" />
+                <ScalarProperty Name="playmessagefailure" ColumnName="playmessagefailure" />
+                <ScalarProperty Name="playmessagetimesuccess" ColumnName="playmessagetimesuccess" />
+                <ScalarProperty Name="playmessagetimeviolation" ColumnName="playmessagetimeviolation" />
+                <ScalarProperty Name="playscript" ColumnName="playscript" />
+                <ScalarProperty Name="recoverytimebegin" ColumnName="recoverytimebegin" />
+                <ScalarProperty Name="recoverytimeend" ColumnName="recoverytimeend" />
+                <ScalarProperty Name="ringnoanswerviolation" ColumnName="ringnoanswerviolation" />
+                <ScalarProperty Name="scheduledcallbacks" ColumnName="scheduledcallbacks" />
+                <ScalarProperty Name="senddigits" ColumnName="senddigits" />
+                <ScalarProperty Name="sendfax" ColumnName="sendfax" />
+                <ScalarProperty Name="timezoneidentifier" ColumnName="timezoneidentifier" />
+                <ScalarProperty Name="transfertimesuccess" ColumnName="transfertimesuccess" />
+                <ScalarProperty Name="transfertimeviolation" ColumnName="transfertimeviolation" />
+                <ScalarProperty Name="transfertoconnectaverage" ColumnName="transfertoconnectaverage" />
+                <ScalarProperty Name="transfertoconnecthigh" ColumnName="transfertoconnecthigh" />
+                <ScalarProperty Name="transfertoconnectlow" ColumnName="transfertoconnectlow" />
+                <ScalarProperty Name="utcstarttime" ColumnName="utcstarttime" />
+                <ScalarProperty Name="utcstoptime" ColumnName="utcstoptime" />
+                <ScalarProperty Name="getaoddata" ColumnName="getaoddata" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="False" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model1" ZoomLevel="10">
+        <EntityTypeShape EntityType="testModel.crm_aspect_monitor_aod" Width="1.5" PointX="0.75" PointY="0.75" Height="21.836080729166667" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

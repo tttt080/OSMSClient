@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="testModel3.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="testModel3StoreContainer">
+          <EntitySet Name="crm_aspect_monitor_workgroup2" EntityType="testModel3.Store.crm_aspect_monitor_workgroup2" store:Type="Tables" Schema="test" />
+        </EntityContainer>
+        <EntityType Name="crm_aspect_monitor_workgroup2">
+          <Key>
+            <PropertyRef Name="workgroupId" />
+          </Key>
+          <Property Name="workgroupId" Type="varchar" Nullable="false" MaxLength="60" />
+          <Property Name="acceptSeconds" Type="varchar" MaxLength="60" />
+          <Property Name="acdCalls" Type="varchar" MaxLength="60" />
+          <Property Name="activeSeconds" Type="varchar" MaxLength="60" />
+          <Property Name="agdCalls" Type="varchar" MaxLength="60" />
+          <Property Name="aodCalls" Type="varchar" MaxLength="60" />
+          <Property Name="chatCalls" Type="varchar" MaxLength="60" />
+          <Property Name="conferenceCalls" Type="varchar" MaxLength="60" />
+          <Property Name="connectSeconds" Type="varchar" MaxLength="60" />
+          <Property Name="consultationCalls" Type="varchar" MaxLength="60" />
+          <Property Name="ctiCalls" Type="varchar" MaxLength="60" />
+          <Property Name="didCalls" Type="varchar" MaxLength="60" />
+          <Property Name="emailCalls" Type="varchar" MaxLength="60" />
+          <Property Name="heldCalls" Type="varchar" MaxLength="60" />
+          <Property Name="heldCeconds" Type="varchar" MaxLength="60" />
+          <Property Name="idleCeconds" Type="varchar" MaxLength="60" />
+          <Property Name="imCalls" Type="varchar" MaxLength="60" />
+          <Property Name="internalCalls" Type="varchar" MaxLength="60" />
+          <Property Name="internalSeconds" Type="varchar" MaxLength="60" />
+          <Property Name="loggedinSeconds" Type="varchar" MaxLength="60" />
+          <Property Name="manualCalls" Type="varchar" MaxLength="60" />
+          <Property Name="manualSeconds" Type="varchar" MaxLength="60" />
+          <Property Name="multiSeconds" Type="varchar" MaxLength="60" />
+          <Property Name="notReadySeconds" Type="varchar" MaxLength="60" />
+          <Property Name="numberOfCallbacks" Type="varchar" MaxLength="60" />
+          <Property Name="numberOfRefusals" Type="varchar" MaxLength="60" />
+          <Property Name="numberOfSuccesses" Type="varchar" MaxLength="60" />
+          <Property Name="otherSeconds" Type="varchar" MaxLength="60" />
+          <Property Name="parkSeconds" Type="varchar" MaxLength="60" />
+          <Property Name="previewSeconds" Type="varchar" MaxLength="60" />
+          <Property Name="reservedCalls" Type="varchar" MaxLength="60" />
+          <Property Name="reservedCallsReceived" Type="varchar" MaxLength="60" />
+          <Property Name="reservedSeconds" Type="varchar" MaxLength="60" />
+          <Property Name="reservedSecondsReceived" Type="varchar" MaxLength="60" />
+          <Property Name="transferredCalls" Type="varchar" MaxLength="60" />
+          <Property Name="workgroup" Type="varchar" MaxLength="60" />
+          <Property Name="wrapSeconds" Type="varchar" MaxLength="60" />
+          <Property Name="acceptedCallsCount" Type="varchar" MaxLength="60" />
+          <Property Name="rejectedCallsCount" Type="varchar" MaxLength="60" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="testModel3" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="testEntities_wrokgroup" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="crm_aspect_monitor_workgroup2" EntityType="testModel3.crm_aspect_monitor_workgroup2" />
+        </EntityContainer>
+        <EntityType Name="crm_aspect_monitor_workgroup2">
+          <Key>
+            <PropertyRef Name="workgroupId" />
+          </Key>
+          <Property Name="workgroupId" Type="String" Nullable="false" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="acceptSeconds" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="acdCalls" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="activeSeconds" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="agdCalls" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="aodCalls" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="chatCalls" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="conferenceCalls" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="connectSeconds" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="consultationCalls" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="ctiCalls" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="didCalls" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="emailCalls" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="heldCalls" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="heldCeconds" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="idleCeconds" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="imCalls" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="internalCalls" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="internalSeconds" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="loggedinSeconds" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="manualCalls" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="manualSeconds" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="multiSeconds" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="notReadySeconds" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="numberOfCallbacks" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="numberOfRefusals" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="numberOfSuccesses" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="otherSeconds" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="parkSeconds" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="previewSeconds" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="reservedCalls" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="reservedCallsReceived" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="reservedSeconds" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="reservedSecondsReceived" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="transferredCalls" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="workgroup" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="wrapSeconds" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="acceptedCallsCount" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="rejectedCallsCount" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="testModel3StoreContainer" CdmEntityContainer="testEntities_wrokgroup">
+          <EntitySetMapping Name="crm_aspect_monitor_workgroup2">
+            <EntityTypeMapping TypeName="testModel3.crm_aspect_monitor_workgroup2">
+              <MappingFragment StoreEntitySet="crm_aspect_monitor_workgroup2">
+                <ScalarProperty Name="workgroupId" ColumnName="workgroupId" />
+                <ScalarProperty Name="acceptSeconds" ColumnName="acceptSeconds" />
+                <ScalarProperty Name="acdCalls" ColumnName="acdCalls" />
+                <ScalarProperty Name="activeSeconds" ColumnName="activeSeconds" />
+                <ScalarProperty Name="agdCalls" ColumnName="agdCalls" />
+                <ScalarProperty Name="aodCalls" ColumnName="aodCalls" />
+                <ScalarProperty Name="chatCalls" ColumnName="chatCalls" />
+                <ScalarProperty Name="conferenceCalls" ColumnName="conferenceCalls" />
+                <ScalarProperty Name="connectSeconds" ColumnName="connectSeconds" />
+                <ScalarProperty Name="consultationCalls" ColumnName="consultationCalls" />
+                <ScalarProperty Name="ctiCalls" ColumnName="ctiCalls" />
+                <ScalarProperty Name="didCalls" ColumnName="didCalls" />
+                <ScalarProperty Name="emailCalls" ColumnName="emailCalls" />
+                <ScalarProperty Name="heldCalls" ColumnName="heldCalls" />
+                <ScalarProperty Name="heldCeconds" ColumnName="heldCeconds" />
+                <ScalarProperty Name="idleCeconds" ColumnName="idleCeconds" />
+                <ScalarProperty Name="imCalls" ColumnName="imCalls" />
+                <ScalarProperty Name="internalCalls" ColumnName="internalCalls" />
+                <ScalarProperty Name="internalSeconds" ColumnName="internalSeconds" />
+                <ScalarProperty Name="loggedinSeconds" ColumnName="loggedinSeconds" />
+                <ScalarProperty Name="manualCalls" ColumnName="manualCalls" />
+                <ScalarProperty Name="manualSeconds" ColumnName="manualSeconds" />
+                <ScalarProperty Name="multiSeconds" ColumnName="multiSeconds" />
+                <ScalarProperty Name="notReadySeconds" ColumnName="notReadySeconds" />
+                <ScalarProperty Name="numberOfCallbacks" ColumnName="numberOfCallbacks" />
+                <ScalarProperty Name="numberOfRefusals" ColumnName="numberOfRefusals" />
+                <ScalarProperty Name="numberOfSuccesses" ColumnName="numberOfSuccesses" />
+                <ScalarProperty Name="otherSeconds" ColumnName="otherSeconds" />
+                <ScalarProperty Name="parkSeconds" ColumnName="parkSeconds" />
+                <ScalarProperty Name="previewSeconds" ColumnName="previewSeconds" />
+                <ScalarProperty Name="reservedCalls" ColumnName="reservedCalls" />
+                <ScalarProperty Name="reservedCallsReceived" ColumnName="reservedCallsReceived" />
+                <ScalarProperty Name="reservedSeconds" ColumnName="reservedSeconds" />
+                <ScalarProperty Name="reservedSecondsReceived" ColumnName="reservedSecondsReceived" />
+                <ScalarProperty Name="transferredCalls" ColumnName="transferredCalls" />
+                <ScalarProperty Name="workgroup" ColumnName="workgroup" />
+                <ScalarProperty Name="wrapSeconds" ColumnName="wrapSeconds" />
+                <ScalarProperty Name="acceptedCallsCount" ColumnName="acceptedCallsCount" />
+                <ScalarProperty Name="rejectedCallsCount" ColumnName="rejectedCallsCount" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="wrokgroup" ZoomLevel="20">
+        <EntityTypeShape EntityType="testModel3.crm_aspect_monitor_workgroup2" Width="1.5" PointX="0.75" PointY="0.75" Height="8.4647021484375" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

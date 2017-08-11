@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="testModel4.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="testModel4StoreContainer">
+          <EntitySet Name="crm_aspect_monitor_table2" EntityType="testModel4.Store.crm_aspect_monitor_table2" store:Type="Tables" Schema="test" />
+        </EntityContainer>
+        <EntityType Name="crm_aspect_monitor_table2">
+          <Key>
+            <PropertyRef Name="tableId" />
+          </Key>
+          <Property Name="tableId" Type="varchar" Nullable="false" MaxLength="60" />
+          <Property Name="filter" Type="varchar" MaxLength="60" />
+          <Property Name="service" Type="varchar" MaxLength="60" />
+          <Property Name="status" Type="varchar" MaxLength="60" />
+          <Property Name="application" Type="varchar" MaxLength="60" />
+          <Property Name="applicationId" Type="varchar" MaxLength="60" />
+          <Property Name="serviceId" Type="varchar" MaxLength="60" />
+          <Property Name="serviceType" Type="varchar" MaxLength="60" />
+          <Property Name="serviceTypeId" Type="varchar" MaxLength="60" />
+          <Property Name="startTimeMilitary" Type="varchar" MaxLength="60" />
+          <Property Name="statusId" Type="varchar" MaxLength="60" />
+          <Property Name="scheduledCallbacks" Type="varchar" MaxLength="60" />
+          <Property Name="abandoned" Type="varchar" MaxLength="60" />
+          <Property Name="badPhoneNumberCount" Type="varchar" MaxLength="60" />
+          <Property Name="dialed" Type="varchar" MaxLength="60" />
+          <Property Name="endTimeMilitary" Type="varchar" MaxLength="60" />
+          <Property Name="excludedCount" Type="varchar" MaxLength="60" />
+          <Property Name="filterId" Type="varchar" MaxLength="60" />
+          <Property Name="inProgress" Type="varchar" MaxLength="60" />
+          <Property Name="leftToBeDialed" Type="varchar" MaxLength="60" />
+          <Property Name="recordsProcessed" Type="varchar" MaxLength="60" />
+          <Property Name="rgBusyQueueCount" Type="varchar" MaxLength="60" />
+          <Property Name="selected" Type="varchar" MaxLength="60" />
+          <Property Name="serviceTableId" Type="varchar" MaxLength="60" />
+          <Property Name="tableName" Type="varchar" MaxLength="60" />
+          <Property Name="timezoneFailureCount" Type="varchar" MaxLength="60" />
+          <Property Name="touchedcount" Type="varchar" MaxLength="60" />
+          <Property Name="timezoneIdentifier" Type="varchar" MaxLength="60" />
+          <Property Name="utcStartTime" Type="varchar" MaxLength="60" />
+          <Property Name="utcStopTime" Type="varchar" MaxLength="60" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="testModel4" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="testEntities_table" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="crm_aspect_monitor_table2" EntityType="testModel4.crm_aspect_monitor_table2" />
+        </EntityContainer>
+        <EntityType Name="crm_aspect_monitor_table2">
+          <Key>
+            <PropertyRef Name="tableId" />
+          </Key>
+          <Property Name="tableId" Type="String" Nullable="false" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="filter" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="service" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="status" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="application" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="applicationId" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="serviceId" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="serviceType" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="serviceTypeId" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="startTimeMilitary" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="statusId" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="scheduledCallbacks" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="abandoned" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="badPhoneNumberCount" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="dialed" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="endTimeMilitary" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="excludedCount" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="filterId" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="inProgress" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="leftToBeDialed" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="recordsProcessed" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="rgBusyQueueCount" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="selected" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="serviceTableId" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="tableName" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="timezoneFailureCount" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="touchedcount" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="timezoneIdentifier" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="utcStartTime" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="utcStopTime" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="testModel4StoreContainer" CdmEntityContainer="testEntities_table">
+          <EntitySetMapping Name="crm_aspect_monitor_table2">
+            <EntityTypeMapping TypeName="testModel4.crm_aspect_monitor_table2">
+              <MappingFragment StoreEntitySet="crm_aspect_monitor_table2">
+                <ScalarProperty Name="tableId" ColumnName="tableId" />
+                <ScalarProperty Name="filter" ColumnName="filter" />
+                <ScalarProperty Name="service" ColumnName="service" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="application" ColumnName="application" />
+                <ScalarProperty Name="applicationId" ColumnName="applicationId" />
+                <ScalarProperty Name="serviceId" ColumnName="serviceId" />
+                <ScalarProperty Name="serviceType" ColumnName="serviceType" />
+                <ScalarProperty Name="serviceTypeId" ColumnName="serviceTypeId" />
+                <ScalarProperty Name="startTimeMilitary" ColumnName="startTimeMilitary" />
+                <ScalarProperty Name="statusId" ColumnName="statusId" />
+                <ScalarProperty Name="scheduledCallbacks" ColumnName="scheduledCallbacks" />
+                <ScalarProperty Name="abandoned" ColumnName="abandoned" />
+                <ScalarProperty Name="badPhoneNumberCount" ColumnName="badPhoneNumberCount" />
+                <ScalarProperty Name="dialed" ColumnName="dialed" />
+                <ScalarProperty Name="endTimeMilitary" ColumnName="endTimeMilitary" />
+                <ScalarProperty Name="excludedCount" ColumnName="excludedCount" />
+                <ScalarProperty Name="filterId" ColumnName="filterId" />
+                <ScalarProperty Name="inProgress" ColumnName="inProgress" />
+                <ScalarProperty Name="leftToBeDialed" ColumnName="leftToBeDialed" />
+                <ScalarProperty Name="recordsProcessed" ColumnName="recordsProcessed" />
+                <ScalarProperty Name="rgBusyQueueCount" ColumnName="rgBusyQueueCount" />
+                <ScalarProperty Name="selected" ColumnName="selected" />
+                <ScalarProperty Name="serviceTableId" ColumnName="serviceTableId" />
+                <ScalarProperty Name="tableName" ColumnName="tableName" />
+                <ScalarProperty Name="timezoneFailureCount" ColumnName="timezoneFailureCount" />
+                <ScalarProperty Name="touchedcount" ColumnName="touchedcount" />
+                <ScalarProperty Name="timezoneIdentifier" ColumnName="timezoneIdentifier" />
+                <ScalarProperty Name="utcStartTime" ColumnName="utcStartTime" />
+                <ScalarProperty Name="utcStopTime" ColumnName="utcStopTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="table" ZoomLevel="25">
+        <EntityTypeShape EntityType="testModel4.crm_aspect_monitor_table2" Width="1.5" PointX="0.75" PointY="0.75" Height="6.74552490234375" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

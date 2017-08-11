@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="testModel2.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="testModel2StoreContainer" />
+        <!--生成过程中发现错误:
+      警告 6013: 表/视图“def.test.crm_aspect_monitor_agent2”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+      
+      <EntityType Name="crm_aspect_monitor_agent2">
+        <Property Name="userId" Type="varchar" MaxLength="60" />
+        <Property Name="serviceId" Type="varchar" MaxLength="60" />
+        <Property Name="serviceType" Type="varchar" MaxLength="60" />
+        <Property Name="serviceTypeId" Type="varchar" MaxLength="60" />
+        <Property Name="statusId" Type="varchar" MaxLength="60" />
+        <Property Name="acceptCalls" Type="varchar" MaxLength="60" />
+        <Property Name="acceptSeconds" Type="varchar" MaxLength="60" />
+        <Property Name="acdCalls" Type="varchar" MaxLength="60" />
+        <Property Name="activeSeconds" Type="varchar" MaxLength="60" />
+        <Property Name="agdCalls" Type="varchar" MaxLength="60" />
+        <Property Name="agentIndex" Type="varchar" MaxLength="60" />
+        <Property Name="aodCalls" Type="varchar" MaxLength="60" />
+        <Property Name="audioPath" Type="varchar" MaxLength="60" />
+        <Property Name="chatCalls" Type="varchar" MaxLength="60" />
+        <Property Name="conferenceCalls" Type="varchar" MaxLength="60" />
+        <Property Name="connectSeconds" Type="varchar" MaxLength="60" />
+        <Property Name="consultAtionCalls" Type="varchar" MaxLength="60" />
+        <Property Name="ctiCalls" Type="varchar" MaxLength="60" />
+        <Property Name="currentServiceId" Type="varchar" MaxLength="60" />
+        <Property Name="didCalls" Type="varchar" MaxLength="60" />
+        <Property Name="emailCalls" Type="varchar" MaxLength="60" />
+        <Property Name="firstName" Type="varchar" MaxLength="60" />
+        <Property Name="heldCalls" Type="varchar" MaxLength="60" />
+        <Property Name="heldSeconds" Type="varchar" MaxLength="60" />
+        <Property Name="idleSeconds" Type="varchar" MaxLength="60" />
+        <Property Name="imCalls" Type="varchar" MaxLength="60" />
+        <Property Name="internalCalls" Type="varchar" MaxLength="60" />
+        <Property Name="internalSeconds" Type="varchar" MaxLength="60" />
+        <Property Name="lastDisposition" Type="varchar" MaxLength="60" />
+        <Property Name="lastDispositionId" Type="varchar" MaxLength="60" />
+        <Property Name="lastName" Type="varchar" MaxLength="60" />
+        <Property Name="loggedInSeconds" Type="varchar" MaxLength="60" />
+        <Property Name="manualCalls" Type="varchar" MaxLength="60" />
+        <Property Name="manualSeconds" Type="varchar" MaxLength="60" />
+        <Property Name="monitoringCalls" Type="varchar" MaxLength="60" />
+        <Property Name="multiSeconds" Type="varchar" MaxLength="60" />
+        <Property Name="notReadySeconds" Type="varchar" MaxLength="60" />
+        <Property Name="numberOfCallbacks" Type="varchar" MaxLength="60" />
+        <Property Name="numberOfRefusals" Type="varchar" MaxLength="60" />
+        <Property Name="numberOfSuccesses" Type="varchar" MaxLength="60" />
+        <Property Name="otherSeconds" Type="varchar" MaxLength="60" />
+        <Property Name="parkSeconds" Type="varchar" MaxLength="60" />
+        <Property Name="previewSeconds" Type="varchar" MaxLength="60" />
+        <Property Name="rejectCalls" Type="varchar" MaxLength="60" />
+        <Property Name="reservedCalls" Type="varchar" MaxLength="60" />
+        <Property Name="reservedCallsReceived" Type="varchar" MaxLength="60" />
+        <Property Name="reservedSeconds" Type="varchar" MaxLength="60" />
+        <Property Name="reservedSecondsReceived" Type="varchar" MaxLength="60" />
+        <Property Name="station" Type="varchar" MaxLength="60" />
+        <Property Name="statusReason" Type="varchar" MaxLength="60" />
+        <Property Name="statusReasonId" Type="varchar" MaxLength="60" />
+        <Property Name="statusSeconds" Type="varchar" MaxLength="60" />
+        <Property Name="statusStartTimeMilitary" Type="varchar" MaxLength="60" />
+        <Property Name="transferredCalls" Type="varchar" MaxLength="60" />
+        <Property Name="workgroup" Type="varchar" MaxLength="60" />
+        <Property Name="workgroupId" Type="varchar" MaxLength="60" />
+        <Property Name="wrapSeconds" Type="varchar" MaxLength="60" />
+        <Property Name="contacts" Type="varchar" MaxLength="60" />
+        <Property Name="inactiveSeconds" Type="varchar" MaxLength="60" />
+        <Property Name="timezoneIdentifier" Type="varchar" MaxLength="60" />
+        <Property Name="utcStartTime" Type="varchar" MaxLength="60" />
+        <Property Name="application" Type="varchar" MaxLength="60" />
+        <Property Name="applicationId" Type="varchar" MaxLength="60" />
+        <Property Name="service" Type="varchar" MaxLength="60" />
+        <Property Name="status" Type="varchar" MaxLength="60" />
+        <Property Name="timeArrival" Type="varchar" MaxLength="60" />
+      </EntityType>-->
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="testModel2" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="testEntities_agent2" annotation:LazyLoadingEnabled="true" />
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="testModel2StoreContainer" CdmEntityContainer="testEntities_agent2" />
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="agent_2" />
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

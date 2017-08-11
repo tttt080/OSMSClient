@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="testModel5.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="testModel5StoreContainer">
+          <EntitySet Name="crm_aspect_monitor_rgstats2" EntityType="testModel5.Store.crm_aspect_monitor_rgstats2" store:Type="Tables" Schema="test" />
+        </EntityContainer>
+        <EntityType Name="crm_aspect_monitor_rgstats2">
+          <Key>
+            <PropertyRef Name="resourceGroupId" />
+          </Key>
+          <Property Name="createtime" Type="varchar" MaxLength="60" />
+          <Property Name="allChannelsBusy" Type="varchar" MaxLength="60" />
+          <Property Name="numBusyChannels" Type="varchar" MaxLength="60" />
+          <Property Name="numIdleChannels" Type="varchar" MaxLength="60" />
+          <Property Name="percentOfBusyState" Type="varchar" MaxLength="60" />
+          <Property Name="percentOfIdleState" Type="varchar" MaxLength="60" />
+          <Property Name="resourceGroupId" Type="varchar" Nullable="false" MaxLength="60" />
+          <Property Name="resourceGroup" Type="varchar" MaxLength="60" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="testModel5" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="testEntities_resourcegroup" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="crm_aspect_monitor_rgstats2" EntityType="testModel5.crm_aspect_monitor_rgstats2" />
+        </EntityContainer>
+        <EntityType Name="crm_aspect_monitor_rgstats2">
+          <Key>
+            <PropertyRef Name="resourceGroupId" />
+          </Key>
+          <Property Name="createtime" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="allChannelsBusy" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="numBusyChannels" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="numIdleChannels" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="percentOfBusyState" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="percentOfIdleState" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="resourceGroupId" Type="String" Nullable="false" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="resourceGroup" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="testModel5StoreContainer" CdmEntityContainer="testEntities_resourcegroup">
+          <EntitySetMapping Name="crm_aspect_monitor_rgstats2">
+            <EntityTypeMapping TypeName="testModel5.crm_aspect_monitor_rgstats2">
+              <MappingFragment StoreEntitySet="crm_aspect_monitor_rgstats2">
+                <ScalarProperty Name="createtime" ColumnName="createtime" />
+                <ScalarProperty Name="allChannelsBusy" ColumnName="allChannelsBusy" />
+                <ScalarProperty Name="numBusyChannels" ColumnName="numBusyChannels" />
+                <ScalarProperty Name="numIdleChannels" ColumnName="numIdleChannels" />
+                <ScalarProperty Name="percentOfBusyState" ColumnName="percentOfBusyState" />
+                <ScalarProperty Name="percentOfIdleState" ColumnName="percentOfIdleState" />
+                <ScalarProperty Name="resourceGroupId" ColumnName="resourceGroupId" />
+                <ScalarProperty Name="resourceGroup" ColumnName="resourceGroup" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="resourcegroup" ZoomLevel="67">
+        <EntityTypeShape EntityType="testModel5.crm_aspect_monitor_rgstats2" Width="1.5" PointX="0.75" PointY="0.75" Height="2.5430916341145835" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
