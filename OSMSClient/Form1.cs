@@ -13,7 +13,12 @@ using Enyim.Caching;
 using Enyim.Caching.Memcached;
 using Enyim.Caching.Configuration;
 using System.Net;
-using System.Linq; 
+using System.Linq;
+using Couchbase;
+
+using Couchbase.Core;
+using Couchbase.Configuration.Client;
+
 namespace OSMSClient
 {
     public partial class Form1 : Form
@@ -391,5 +396,47 @@ namespace OSMSClient
 
         }
 
+       
+
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+           
+          //  CouchbaseClient client = new CouchbaseClient(cbcc);
+
+            using (var bucket = Cluster.OpenBucket("192.168.1.200"))
+            {
+                var document = new Document<dynamic>
+                {
+                    Id = "Hello",
+                    Content = new
+                    {
+                        name = "Couchbase"
+                    }
+                };
+
+                var upsert = bucket.Upsert(document);
+                if (upsert.Success)
+                {
+                    var get = bucket.GetDocument<dynamic>(document.Id);
+                    document = get.Document;
+                   var msg = string.Format("{0} {1}!", document.Id, document.Content.name);
+                    Console.WriteLine(msg);
+                }
+                Console.Read();
+
+            }
+
+        }
+
+        public Cluster Cluster;
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            ClientConfiguration ction = new ClientConfiguration();
+            ction.ApiPort(8901);
+            ction.
+            Cluster = new Cluster();
+        }
     }
 }
