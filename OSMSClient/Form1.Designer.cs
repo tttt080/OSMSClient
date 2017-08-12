@@ -48,7 +48,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(21, 22);
+            this.button1.Location = new System.Drawing.Point(21, 17);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -58,7 +58,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(239, 37);
+            this.button5.Location = new System.Drawing.Point(262, 37);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 4;
@@ -68,16 +68,17 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(9, 37);
+            this.button6.Location = new System.Drawing.Point(193, 12);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.Size = new System.Drawing.Size(85, 23);
             this.button6.TabIndex = 5;
-            this.button6.Text = "初始化";
+            this.button6.Text = "Memcached初始化";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.button12);
             this.groupBox2.Controls.Add(this.button10);
             this.groupBox2.Controls.Add(this.button9);
             this.groupBox2.Controls.Add(this.button8);
@@ -87,11 +88,10 @@
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.button6);
             this.groupBox2.Controls.Add(this.button5);
             this.groupBox2.Location = new System.Drawing.Point(12, 51);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(667, 249);
+            this.groupBox2.Size = new System.Drawing.Size(780, 249);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Enyim.Caching";
@@ -174,7 +174,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(119, 37);
+            this.button4.Location = new System.Drawing.Point(165, 42);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 8;
@@ -194,7 +194,7 @@
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(211, 12);
+            this.button12.Location = new System.Drawing.Point(5, 37);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(136, 33);
             this.button12.TabIndex = 9;
@@ -206,11 +206,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 343);
-            this.Controls.Add(this.button12);
+            this.ClientSize = new System.Drawing.Size(826, 331);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.button6);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox2.ResumeLayout(false);

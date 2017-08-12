@@ -156,23 +156,28 @@ namespace OSMSClient
                             string jsonkey = string.Format("aod_{0}", c.serviceid);
                             string jsonvalue = JsonConvert.SerializeObject(aodaspect);
                             Console.WriteLine(jsonvalue);
-                            
-                          
 
-                            if (mc.Get(jsonkey) != null)
+
+
+                            using (var bucket = Cluster.OpenBucket("osms_cb"))
                             {
-                                
-                                bool b =mc.Store(StoreMode.Replace, jsonkey, jsonvalue);
 
-                                Console.WriteLine(string.Format("replace key {0}============{1}",jsonkey,b));
-                            }
-                            else
-                            {
-                                
-                                bool b =mc.Store(StoreMode.Add, jsonkey, jsonvalue);
+                                if (bucket.Exists(jsonkey))
+                                {
+                                    var result = bucket.Replace(jsonkey, jsonvalue);
 
-                                Console.WriteLine(string.Format("add key {0}============{1}", jsonkey, b));
+                                    Console.WriteLine(String.Format("======Replace======={0},{1}", jsonkey, result.Success));
+                                }
+                                else
+                                {
+                                    var result = bucket.Insert(jsonkey, jsonvalue);
+
+                                    Console.WriteLine(String.Format("======Insert======={0},{1}", jsonkey, result.Success));
+                                }
+
+
                             }
+
                             break;
                         }
                         
@@ -396,9 +401,6 @@ namespace OSMSClient
 
         }
 
-       
-
-
         private void button11_Click(object sender, EventArgs e)
         {
            
@@ -433,10 +435,19 @@ namespace OSMSClient
 
         private void button12_Click(object sender, EventArgs e)
         {
-            ClientConfiguration ction = new ClientConfiguration();
-            ction.ApiPort(8901);
-            ction.
-            Cluster = new Cluster();
+           
+            try
+            {
+                ClientConfiguration ccf = new ClientConfiguration();
+                ccf.Servers.Add(new Uri("http://192.168.1.200:8091/pools"));
+                Cluster = new Cluster(ccf);
+                Cluster.OpenBucket();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
     }
 }
